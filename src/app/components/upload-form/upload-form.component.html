@@ -1,11 +1,13 @@
 <div class="d-flex justify-content-center m-4">
-  <label>
+  <label class="btn btn-success btn-file">
+    Ajouter des photos 
     <input
-      type="file"
-      multiple
-      class="text-nowrap text-truncate form-control mr-4"
-      (change)="selectFile($event)"
-    />
+    type="file"
+    multiple
+    class="text-nowrap text-truncate form-control mr-4"
+    style="display: none;"
+    (change)="selectFile($event)"
+  />
   </label>
 </div>
 
