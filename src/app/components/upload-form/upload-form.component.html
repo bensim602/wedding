@@ -8,15 +8,6 @@
     />
   </label>
 </div>
-<div class="d-flex justify-content-center m-4">
-  <button
-    class="btn btn-success btn-sm"
-    [disabled]="!selectedFiles"
-    (click)="upload()"
-  >
-    Upload
-  </button>
-</div>
 
 <div *ngIf="currentFileUpload" class="progress mt-2">
   <div
