@@ -1,20 +1,22 @@
-<label>
-  <input
-    type="file"
-    multiple
-    class="text-nowrap text-truncate form-control mr-4"
-    (change)="selectFile($event)"
-  />
-</label>
-<br>
-
-<button
-  class="btn btn-success btn-sm"
-  [disabled]="!selectedFiles"
-  (click)="upload()"
->
-  Upload
-</button>
+<div class="d-flex justify-content-center m-4">
+  <label>
+    <input
+      type="file"
+      multiple
+      class="text-nowrap text-truncate form-control mr-4"
+      (change)="selectFile($event)"
+    />
+  </label>
+</div>
+<div class="d-flex justify-content-center m-4">
+  <button
+    class="btn btn-success btn-sm"
+    [disabled]="!selectedFiles"
+    (click)="upload()"
+  >
+    Upload
+  </button>
+</div>
 
 <div *ngIf="currentFileUpload" class="progress mt-2">
   <div
